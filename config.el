@@ -64,8 +64,8 @@
 
 ;; RESCRIPT MODE
 (add-hook 'reason-mode-hook (lambda ()
-          (add-hook 'before-save-hook #'refmt-before-save)))
-
+                              (add-hook 'before-save-hook #'refmt-before-save)
+                              (merlin-mode)))
 
 ;; Treemacs icons
 (use-package treemacs-all-the-icons
